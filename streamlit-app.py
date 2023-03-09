@@ -3,7 +3,6 @@ import pandas as pd
 from PIL import Image
 import streamlit.components.v1 as components
 import codecs
-import matplotlib.pyplot as plt
 import plotly.graph_objs as go
 
 
