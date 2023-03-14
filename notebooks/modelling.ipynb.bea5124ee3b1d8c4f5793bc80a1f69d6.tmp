@@ -1,0 +1,6 @@
+'''USING H20 TO FIND BETTER MODELS'''
+import h2o
+from h2o.automl import H2OAutoML
+
+# Start H2O cluster
+h2o.init()

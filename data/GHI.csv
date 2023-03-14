@@ -1,0 +1,250 @@
+,Country,Year,GHI,Code
+0,Afghanistan,2021,28.3,AFG
+1,Afghanistan,2022,29.9,AFG
+2,Albania,2021,6.2,ALB
+3,Albania,2022,6.2,ALB
+4,Algeria,2021,6.9,DZA
+5,Algeria,2022,6.9,DZA
+6,Angola,2021,26,AGO
+7,Angola,2022,25.9,AGO
+8,Argentina,2021,5.3,ARG
+9,Argentina,2022,6.8,ARG
+10,Armenia,2021,7.2,ARM
+11,Armenia,2022,6.9,ARM
+12,Azerbaijan,2021,7.5,AZE
+13,Azerbaijan,2022,7.5,AZE
+15,Bangladesh,2021,19.1,BGD
+16,Bangladesh,2022,19.6,BGD
+17,Belarus,2021,2.5,BLR
+18,Belarus,2022,3,BLR
+19,Benin,2021,22.2,BEN
+20,Benin,2022,21.7,BEN
+22,Bolivia,2021,12.7,BOL
+23,Bolivia (Plurinat. State of),2022,13.2,unknown
+24,Bosnia & Herzegovina,2022,3,unknown
+25,Bosnia and Herzegovina,2021,2.5,BIH
+26,Botswana,2021,23.2,BWA
+27,Botswana,2022,20,BWA
+28,Brazil,2021,2.5,BRA
+29,Brazil,2022,5.4,BRA
+30,Bulgaria,2021,6.1,BGR
+31,Bulgaria,2022,5.9,BGR
+32,Burkina Faso,2021,24.5,BFA
+33,Burkina Faso,2022,24.5,BFA
+34,Burundi,2021,42.5,BDI
+36,Cabo Verde,2022,11.8,CPV
+37,Cambodia,2021,17,KHM
+38,Cambodia,2022,17.1,KHM
+39,Cameroon,2021,18.6,CMR
+40,Cameroon,2022,18.9,CMR
+41,Cape Verde,2021,10.8,unknown
+42,Central African Republic,2021,43,CAF
+43,Central African Republic,2022,44,CAF
+44,Chad,2021,39.6,TCD
+45,Chad,2022,37.2,TCD
+46,Chile,2021,2.5,CHL
+47,Chile,2022,3,CHL
+48,China,2021,2.5,CHN
+49,China,2022,3,CHN
+50,Colombia,2021,8.9,COL
+51,Colombia,2022,7.6,COL
+52,Comoros,2021,42.5,COM
+53,Comoros,2022,26.9,COM
+54,Congo,2021,30.3,COG
+55,Congo (Republic of),2022,28.1,unknown
+56,Costa Rica,2021,5.3,CRI
+57,Costa Rica,2022,5.3,CRI
+58,Cote d'Ivoire,2021,22.3,CIV
+59,Croatia,2021,2.5,HRV
+60,Croatia,2022,3,HRV
+61,Cuba,2021,2.5,CUB
+62,Côte d'Ivoire,2022,16.8,CIV
+63,Dem. Rep. of the Congo,2022,37.8,unknown
+64,Democratic Republic of Congo,2021,39,unknown
+65,Djibouti,2021,27.4,DJI
+66,Djibouti,2022,21.5,DJI
+67,Dominican Republic,2021,8,DOM
+68,Dominican Republic,2022,8.8,DOM
+69,Ecuador,2021,14,ECU
+70,Ecuador,2022,15.2,ECU
+71,Egypt,2021,12.5,EGY
+72,Egypt,2022,12.3,EGY
+73,El Salvador,2021,8.9,SLV
+74,El Salvador,2022,8.4,SLV
+77,Estonia,2021,2.5,EST
+78,Estonia,2022,3,EST
+79,Eswatini,2021,17,SWZ
+80,Eswatini,2022,16.3,SWZ
+81,Ethiopia,2021,24.1,ETH
+82,Ethiopia,2022,27.6,ETH
+83,Fiji,2021,8.6,FJI
+84,Fiji,2022,9.2,FJI
+85,Gabon,2021,16.6,GAB
+86,Gabon,2022,17.2,GAB
+87,Gambia,2021,17.6,GMB
+88,Gambia,2022,20.7,GMB
+89,Georgia,2021,6.3,GEO
+90,Georgia,2022,5.7,GEO
+91,Ghana,2021,14.9,GHA
+92,Ghana,2022,13.9,GHA
+93,Guatemala,2021,19.6,GTM
+94,Guatemala,2022,18.8,GTM
+95,Guinea,2021,27.5,GIN
+97,Guinea-Bissau,2021,27.5,GNB
+98,Guinea-Bissau,2022,30.8,GNB
+99,Guyana,2021,10.7,GUY
+100,Guyana,2022,10.4,GUY
+101,Haiti,2021,32.8,HTI
+102,Haiti,2022,32.7,HTI
+103,Honduras,2021,12.8,HND
+104,Honduras,2022,13.4,HND
+105,Hungary,2022,3,HUN
+106,India,2021,27.5,IND
+107,India,2022,29.1,IND
+108,Indonesia,2021,18,IDN
+109,Indonesia,2022,17.9,IDN
+110,Iran,2021,7.7,IRN
+111,Iran (Islamic Republic of),2022,6.5,unknown
+112,Iraq,2021,22.8,IRQ
+113,Iraq,2022,13.7,IRQ
+114,Jamaica,2021,8.6,JAM
+115,Jamaica,2022,7,JAM
+116,Jordan,2021,8.3,JOR
+117,Jordan,2022,10.6,JOR
+118,Kazakhstan,2021,6.4,KAZ
+119,Kazakhstan,2022,5.9,KAZ
+120,Kenya,2021,23,KEN
+121,Kenya,2022,23.5,KEN
+122,Korea (DPR),2022,24.9,unknown
+123,Kuwait,2021,2.5,KWT
+124,Kuwait,2022,3,KWT
+125,Kyrgyzstan,2021,8.6,KGZ
+126,Kyrgyzstan,2022,7.8,KGZ
+127,Lao PDR,2022,19.2,unknown
+128,Laos,2021,19.5,unknown
+129,Latvia,2021,2.5,LVA
+130,Latvia,2022,3,LVA
+131,Lebanon,2021,9.7,LBN
+132,Lebanon,2022,10.5,LBN
+133,Lesotho,2021,27.4,LSO
+134,Lesotho,2022,32.4,LSO
+135,Liberia,2021,33.3,LBR
+136,Liberia,2022,32.4,LBR
+138,Lithuania,2021,2.5,LTU
+139,Lithuania,2022,3,LTU
+140,Madagascar,2021,36.3,MDG
+141,Madagascar,2022,38.7,MDG
+142,Malawi,2021,21.3,MWI
+143,Malawi,2022,20.7,MWI
+144,Malaysia,2021,12.8,MYS
+145,Malaysia,2022,12.5,MYS
+147,Mali,2021,24.7,MLI
+148,Mali,2022,23.2,MLI
+149,Mauritania,2021,22.6,MRT
+150,Mauritania,2022,20.7,MRT
+151,Mauritius,2021,12.2,MUS
+152,Mauritius,2022,13.4,MUS
+153,Mexico,2021,8.5,MEX
+154,Mexico,2022,8.1,MEX
+155,Moldova,2021,5,MDA
+156,Moldova (Rep. of),2022,6.9,unknown
+157,Mongolia,2021,6.1,MNG
+158,Mongolia,2022,5.7,MNG
+159,Montenegro,2021,2.5,MNE
+160,Montenegro,2022,3,MNE
+161,Morocco,2021,8.8,MAR
+162,Morocco,2022,9.2,MAR
+163,Mozambique,2021,31.3,MOZ
+165,Myanmar,2021,17.5,MMR
+166,Myanmar,2022,15.6,MMR
+167,Namibia,2021,20.2,NAM
+168,Namibia,2022,18.7,NAM
+169,Nepal,2021,19.1,NPL
+170,Nepal,2022,19.1,NPL
+171,Nicaragua,2021,14,NIC
+172,Nicaragua,2022,13.6,NIC
+173,Niger,2021,27.5,NGA
+174,Niger,2022,32.6,NGA
+175,Nigeria,2021,28.3,NGA
+176,Nigeria,2022,27.3,NGA
+177,North Korea,2021,25.2,PRK
+178,North Macedonia,2021,2.5,MKD
+179,North Macedonia,2022,3,MKD
+180,Oman,2021,12.3,OMN
+181,Oman,2022,13,OMN
+182,Pakistan,2021,24.7,PAK
+183,Pakistan,2022,26.1,PAK
+184,Panama,2021,8.9,PAN
+185,Panama,2022,8.1,PAN
+186,Papua New Guinea,2021,27.8,PNG
+187,Papua New Guinea,2022,26.5,PNG
+188,Paraguay,2021,7.5,PRY
+189,Paraguay,2022,8,PRY
+190,Peru,2021,8,PER
+191,Peru,2022,7.6,PER
+192,Philippines,2021,16.8,PHL
+193,Philippines,2022,14.8,PHL
+195,Romania,2021,2.5,ROU
+196,Romania,2022,3,ROU
+197,Russia,2021,6.2,RUS
+198,Russia,2022,6.4,RUS
+199,Rwanda,2021,26.4,RWA
+200,Rwanda,2022,27.2,RWA
+201,Saudi Arabia,2021,6.8,SAU
+202,Saudi Arabia,2022,6.7,SAU
+203,Senegal,2021,16.3,SEN
+204,Senegal,2022,15.6,SEN
+205,Serbia,2021,2.5,SRB
+206,Serbia,2022,3,SRB
+207,Sierra Leone,2021,31.3,SLE
+208,Sierra Leone,2022,31.5,SLE
+209,Slovakia,2021,2.5,SVK
+210,Slovakia,2022,3,SVK
+211,Solomon Islands,2021,18.8,SLB
+212,Solomon Islands,2022,19.4,SLB
+213,Somalia,2021,50.8,SOM
+215,South Africa,2021,12.9,ZAF
+216,South Africa,2022,12.9,ZAF
+217,South Sudan,2021,42.5,SSD
+219,Sri Lanka,2021,16,LKA
+220,Sri Lanka,2022,13.6,LKA
+221,Sudan,2021,25.1,SDN
+222,Sudan,2022,28.8,SDN
+223,Suriname,2021,10.4,SUR
+224,Suriname,2022,10.2,SUR
+225,Syria,2021,42.5,SYR
+227,Tajikistan,2021,15,TJK
+228,Tajikistan,2022,13.9,TJK
+229,Tanzania,2021,24.7,TZA
+230,Tanzania (United Rep. of),2022,23.6,unknown
+231,Thailand,2021,11.7,THA
+232,Thailand,2022,12,THA
+233,Timor,2021,32.4,TLS
+234,Timor-Leste,2022,30.6,TLS
+235,Togo,2021,23.7,TGO
+236,Togo,2022,22.8,TGO
+237,Trinidad & Tobago,2022,9,unknown
+238,Trinidad and Tobago,2021,8.9,TTO
+239,Tunisia,2021,6,TUN
+240,Tunisia,2022,6.1,TUN
+241,Turkey,2021,2.5,TUR
+242,Turkmenistan,2021,9.7,TKM
+243,Turkmenistan,2022,9.5,TKM
+244,Türkiye,2022,3,unknown
+245,Uganda,2021,27.5,UGA
+247,Ukraine,2021,6.8,UKR
+248,Ukraine,2022,7.5,UKR
+249,United Arab Emirates,2022,5.3,ARE
+250,Uruguay,2021,2.5,URY
+251,Uruguay,2022,3,URY
+252,Uzbekistan,2021,5.9,UZB
+253,Uzbekistan,2022,5.6,UZB
+254,Venezuela,2021,22.2,VEN
+255,Venezuela (Boliv. Rep. of),2022,19.9,unknown
+256,Viet Nam,2022,11.9,VNM
+257,Vietnam,2021,13.6,VNM
+258,Yemen,2021,45.1,YEM
+259,Yemen,2022,45.1,YEM
+260,Zambia,2021,27.5,ZMB
+261,Zambia,2022,29.3,ZMB
+262,Zimbabwe,2021,27.5,ZWE

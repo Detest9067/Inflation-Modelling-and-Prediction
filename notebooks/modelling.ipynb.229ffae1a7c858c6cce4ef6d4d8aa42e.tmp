@@ -1,0 +1,4 @@
+# View information about the best model
+print(best_model)
+print(best_model.model_performance(valid))
+preds = best_model.predict(valid)

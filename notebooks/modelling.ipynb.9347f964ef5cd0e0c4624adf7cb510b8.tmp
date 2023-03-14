@@ -1,0 +1,36 @@
+'''Random Forest'''
+# Define feature and target variables
+X = df[['2021 TR', '2022 TR', '2021 Inf', '2021 ED', '2022 ED', '2021 GHI', '2022 GHI']]
+y = df['2022 Inf']
+
+# Scale the feature variables
+scaler = StandardScaler()
+X_scaled = scaler.fit_transform(X)
+
+# Split data into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X_scaled, y, test_size=0.2, random_state=42)
+
+# Define parameter grid for grid search
+param_grid = {
+    'n_estimators': [100, 200, 500],
+    'max_features': ['sqrt', 'log2'],
+    'max_depth': [3, 5, 7, None]
+}
+
+# Define random forest regressor
+rf = RandomForestRegressor()
+
+# Perform grid search to find the best hyperparameters
+rf_grid = GridSearchCV(estimator=rf, param_grid=param_grid, cv=5, n_jobs=-1)
+rf_grid.fit(X_train, y_train)
+
+# Print best hyperparameters and score
+print("Best parameters:", rf_grid.best_params_)
+print("Best score:", rf_grid.best_score_)
+
+# Predict on test set with best model from grid search
+y_pred = rf_grid.predict(X_test)
+
+# Evaluate model performance on test set
+r2 = r2_score(y_test, y_pred)
+print("Random Forest R^2 score:", r2)
