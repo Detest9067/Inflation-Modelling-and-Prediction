@@ -218,7 +218,7 @@ def ghi_plot(ghi_df, selected_country):
     # Set axis labels and title
     ax.set_xlabel('Year')
     ax.set_ylabel('GHI')
-    ax.set_title(f'Global Hunger Index for {selected_country}')
+    # ax.set_title(f'Global Hunger Index for {selected_country}')
     ax.set_xticks([2021, 2022])
     ax.set_xticklabels(['2021', '2022'])    
     
@@ -237,3 +237,21 @@ def predict_inflation_rate(ghi, tax_rate, excess_deaths):
     pred = best_model.predict(input_data)
     # Return the predicted inflation rate
     return pred[0,'predict']
+
+#plotting predictions
+def predicted_plot(df):
+    # Select the Code and 2023 inflation columns
+    df_selected = df[['Code', '2023 inflation']]
+    
+    # Drop any rows with missing values
+    df_selected.dropna(inplace=True)
+    
+    threshold1 = 5
+    threshold2 = 10
+
+    # Create a scatter plot of the country and 2023 inflation
+    color = df_selected['2023 inflation'].apply(lambda x: 'red' if x >= threshold2 else 'orange' if x >= threshold1 else 'blue')
+    fig = go.Figure(data=go.Scatter(x=df_selected['Code'], y=df_selected['2023 inflation'], mode='markers', marker=dict(color=color)))
+    fig.update_layout(xaxis_title='Country', yaxis_title='2023 Inflation', title=' Expected 2023 Inflation by Country', width=1200, height=800)
+    
+    return fig
