@@ -6,6 +6,7 @@ import plotly.graph_objs as go
 import plotly.express as px
 import kaleido
 import streamlit as st
+import h2o
 
 
 #import any csv
@@ -208,8 +209,7 @@ def excess_death_graph(new_df, selected_country):
     # Return the plot as a figure object
     return fig
 
-
-
+#ghi plot
 def ghi_plot(ghi_df, selected_country):
     fig, ax = plt.subplots(figsize=(10, 6))
           
@@ -225,3 +225,15 @@ def ghi_plot(ghi_df, selected_country):
     # Add legend outside the plot area
     ax.legend(loc='center left', bbox_to_anchor=(1, 0.5))
     return fig
+
+#predictor
+def predict_inflation_rate(ghi, tax_rate, excess_deaths):
+    h2o.init()
+    model_path = "/home/graham/Documents/Ironhack/Final-Project/best_model.mojo"
+    best_model = h2o.import_mojo(model_path)
+    # Create a H2OFrame with user inputs
+    input_data = h2o.H2OFrame({'GHI': [ghi], 'Tax_Rate': [tax_rate], 'Excess_Deaths': [excess_deaths]})
+    # Make predictions using the best model
+    pred = best_model.predict(input_data)
+    # Return the predicted inflation rate
+    return pred[0,'predict']

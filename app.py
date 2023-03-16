@@ -5,12 +5,13 @@ import streamlit.components.v1 as components
 import codecs
 import seaborn as sns
 import numpy as np
+import h2o
 
 st.set_page_config(
-     page_title="The unseen effects of Inflation",
-     page_icon="U+1F4B0",
-     layout="wide",
-     initial_sidebar_state="expanded",
+    page_title="Inflationary Tales",
+    page_icon="🫠",
+    layout="wide",
+    initial_sidebar_state="expanded",
 )
 
 #functions for the pages and respective content
@@ -29,7 +30,7 @@ def page2():
     #clean the inflation df using function in src
     sorted_df = src.inflation_df(inflation_df)
     # create tabs
-    tab1, tab2, tab3 =st.tabs(['By year', 'Top/Bottom 10', 'Mean value per year'])
+    tab1, tab2, tab3 =st.tabs(['By year 📅', 'Top/Bottom 10 📊', '2008-2022 avg 📈'])
     
 
     with tab1:
@@ -64,7 +65,7 @@ def page3():
     mean_tax_df = src.clean_and_sort_tax_df(tax_df)
 
 
-    tab1, tab2, tab3 = st.tabs(["Tax Rate", "Excess Mortality", "GHI Data"])
+    tab1, tab2, tab3 = st.tabs(["Tax Rate 💰", "Excess Mortality 💀", "GHI Data 🌍"])
 
     with tab1:
          # year slider
@@ -103,8 +104,6 @@ def page3():
             fig3 = src.ghi_plot(ghi_df_filtered, selected_country)
             st.plotly_chart(fig3)
 
-
-
 def page4():
     st.title("Correlation Analysis")
     st.write("This is the page for the correlation analysis.")
@@ -112,35 +111,56 @@ def page4():
     path = 'data/combined_data.csv'
     correlation_df = src.read_csv_file(path)
 
-    tab1, tab2 = st.tabs(['Correlations', 'Machine Learning'])
+        
+    col1, col2 = st.columns(2)
 
-    with tab1:
-        #with st.container():
-        col1, col2 = st.columns(2)
+    with col1:
+        header = st.header("Kendall Tau")
+        image = Image.open("/home/graham/Documents/Ironhack/Final-Project/images/kt.png")
+        st.image(image, caption="Kendal Tau Correlation", use_column_width=True)
 
-        with col1:
-            st.header("Kendall Tau")
-            image = Image.open("/home/graham/Documents/Ironhack/Final-Project/images/kt.png")
-            st.image(image, caption="Kendal Tau Correlation", use_column_width=True)
-
-        with col2:
-            st.header("Pearson")
-            image = Image.open("/home/graham/Documents/Ironhack/Final-Project/images/pearson.png")
-            st.image(image, caption="Pearson Correlation", use_column_width=True)
+    with col2:
+        st.header("Pearson")
+        image = Image.open("/home/graham/Documents/Ironhack/Final-Project/images/pearson.png")
+        st.image(image, caption="Pearson Correlation", use_column_width=True)
 
 def page5():
-    st.title("Conclusion")
-    st.write("This is the page for the conclusion of the analysis.")
+    st.header("Machine Learning Summary")
+    with st.container():
+        col1, col2 = st.columns(2)
+        
+        with col1:
+            image = Image.open("/home/graham/Documents/Ironhack/Final-Project/images/feature.png")
+            st.image(image, caption="Feature Importance", use_column_width=True)
 
+        with col2:
+            image2 = Image.open("/home/graham/Documents/Ironhack/Final-Project/images/residuals.png")
+            st.image(image2, caption="Residuals", use_column_width=True)
+    st.subheader('Predicted vs Actual Values')
+    image3 = Image.open('/home/graham/Documents/Ironhack/Final-Project/images/AvP2.png')
+    st.image(image3, caption="Model Perfomance", use_column_width=True)
+
+def page6():
+    st.header("Predictor")
+    h2o.init()
+    ghi = st.slider('GHI', min_value=0, max_value=100, step=1)
+    tax_rate = st.slider('Tax Rate', min_value=0, max_value=50, step=1)
+    excess_deaths = st.slider('Excess Deaths', min_value=0, max_value=1000, step=10)
+    input_data = h2o.H2OFrame({'GHI': [ghi], 'Tax_Rate': [tax_rate], 'Excess_Deaths': [excess_deaths]})
+
+    if st.button('Predict'):
+        predicted_rate =src.predict_inflation_rate(ghi, tax_rate, excess_deaths)
+        st.write(f'Predicted inflation rate: {predicted_rate:.2f}%')
+        st.write(input_data)
+        
 pages = {
-    "Contextual Background": page1,
-    "Inflation": page2,
-    "Other Important Metrics": page3,
-    "Correlation Analysis": page4,
-    "Conclusion": page5
-}
+    "Contextual Background 📖": page1,
+    "Inflation 💸": page2,
+    "Other Important Metrics 🗃": page3,
+    "Correlation Analysis 👀": page4,
+    "Machine Learning 💻": page5,
+    "Predictions": page6,
+    }
 
 page = st.sidebar.selectbox('Select a page', list(pages.keys()))
 pages[page]()
-
-

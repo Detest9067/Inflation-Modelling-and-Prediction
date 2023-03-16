@@ -1,2 +1,0 @@
-path = ('/home/graham/Documents/Ironhack/Final-Project/data/combined_data.csv')
-df = src.read_csv_file(path)
