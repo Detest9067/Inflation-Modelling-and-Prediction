@@ -28,7 +28,9 @@ def page1():
         st.markdown("")
         st.subheader("Research Question 2: Can we predict Inflation based off other metrics")
         st.markdown("**Once we've built a statistical model based off our data, we'll use it to make predictions about future inflation rates**")
-        meme = Image.open("/home/graham/Documents/Ironhack/Final-Project/images/inflation.jpeg")
+        # meme = Image.open("/home/graham/Documents/Ironhack/Final-Project/images/inflation.jpeg")
+        meme = Image.open("images/inflation.jpeg")
+
         st.image(meme, caption="Inflation in a nutshell", use_column_width=True)
     with tab2:
         st.subheader("Data Sources")
